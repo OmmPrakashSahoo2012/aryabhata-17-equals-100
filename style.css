@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    animation: slideDown 0.8s ease-out;
+}
+
+.aryabhata-avatar {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    animation: spin 4s linear infinite;
+}
+
+.aryabhata-avatar img {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.8));
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+    font-size: 1.3em;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+main {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-out;
+}
+
+.lesson-section {
+    margin-bottom: 50px;
+}
+
+.aryabhata-speaks {
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border-left: 5px solid #ff6b6b;
+}
+
+.aryabhata-speaks h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.aryabhata-speaks .quote {
+    font-style: italic;
+    font-size: 1.1em;
+    color: #444;
+}
+
+.math-revelation {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.equation-box {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff8e72 100%);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(255, 107, 107, 0.3);
+    animation: bounce 2s infinite;
+}
+
+.equation-box h3 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.big-equation {
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+    font-family: 'Georgia', serif;
+}
+
+.shocked {
+    font-size: 2em;
+    color: white;
+    margin-top: 15px;
+    animation: shake 0.5s infinite;
+}
+
+.children-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.child {
+    text-align: center;
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 120px;
+    animation: pop 0.6s ease-out;
+}
+
+.child span {
+    font-size: 3em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.child p {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.shocked-child {
+    background: #ffe6e6;
+    border: 3px solid #ff6b6b;
+}
+
+.confused-child {
+    background: #fff9e6;
+    border: 3px solid #ffd700;
+}
+
+.mind-blown {
+    background: #e6f3ff;
+    border: 3px solid #4ecdc4;
+}
+
+.aryabhata-explanation {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 5px solid #667eea;
+    margin: 40px 0;
+}
+
+.aryabhata-explanation h3 {
+    color: #667eea;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.explanation-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px dashed #667eea;
+}
+
+.explanation-box p {
+    margin: 10px 0;
+    font-size: 1.05em;
+    color: #444;
+    line-height: 1.8;
+}
+
+.wink {
+    font-size: 2em;
+    font-weight: bold;
+    color: #667eea;
+    margin-top: 15px;
+}
+
+.proof-section {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 40px 0;
+}
+
+.proof-section h3 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.fake-proof {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.1em;
+}
+
+.fake-proof p {
+    margin: 12px 0;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    color: #444;
+}
+
+.interactive-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 40px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.interactive-section h2 {
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+.calculator {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+#userNumber {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    background: #ffd700;
+    color: #333;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #ffed4e;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.5);
+}
+
+.result-box {
+    background: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 1.3em;
+    font-weight: bold;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reactions-section {
+    margin-top: 50px;
+}
+
+.reactions-section h2 {
+    text-align: center;
+    color: #667eea;
+    margin-bottom: 30px;
+    font-size: 1.6em;
+}
+
+.reactions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.reaction {
+    background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.reaction:hover {
+    transform: translateY(-5px);
+}
+
+.reaction p {
+    font-style: italic;
+    margin-bottom: 12px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.reaction span {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    font-size: 0.95em;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    color: #666;
+    font-size: 0.95em;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+/* Animations */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes pop {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .big-equation {
+        font-size: 3em;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .calculator {
+        flex-direction: column;
+    }
+
+    #userNumber {
+        width: 100%;
+    }
+}
